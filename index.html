@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienestar y Salud Mental</title>
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales */
+        body {
+            background-color: #f8f9fa; /* Fondo blanco */
+        }
+        .hero-image {
+            background-image: url('images/mental-health.jpg'); /* Imagen de bienestar */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+        }
+        .hero-text {
+            color: #ff99cc; /* Rosa pastel */
+            text-align: center;
+            padding-top: 100px;
+        }
+        .section-title {
+            margin-top: 30px;
+            text-align: center;
+            color: #ff66b2; /* Rosa más intenso para los títulos */
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar {
+            background-color: #ff66b2; /* Rosa pastel para el navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important; /* Texto blanco en el navbar */
+        }
+        .navbar-toggler-icon {
+            background-color: white; /* Íconos del navbar en blanco */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bienestar Mental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Consejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <div id="home" class="hero-image">
+        <div class="hero-text">
+            <h1>Tu Bienestar Mental es lo Primero</h1>
+            <p>Encuentra consejos y recursos para mejorar tu salud emocional y mental.</p>
+        </div>
+    </div>
+
+    <!-- Sección "Acerca de" -->
+    <section id="about" class="container my-5">
+        <h2 class="section-title">Acerca de este sitio</h2>
+        <p>
+            Este sitio está diseñado para proporcionar recursos, consejos y prácticas que promuevan el bienestar emocional y mental. Nuestro objetivo es ayudarte a encontrar herramientas para manejar el estrés, la ansiedad, y mejorar tu calidad de vida.
+        </p>
+    </section>
+
+    <!-- Área de Consejos -->
+    <section id="projects" class="container my-5">
+        <h2 class="section-title">Consejos para el Bienestar</h2>
+        <div class="row">
+            <!-- Consejo 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/meditacion.jpg" class="card-img-top" alt="Consejo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Meditación y Mindfulness</h5>
+                        <p class="card-text">Aprende a meditar y practicar mindfulness para reducir el estrés y aumentar la paz interior.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Consejo 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Equilibrio.jpg" class="card-img-top" alt="Consejo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Equilibrio entre Trabajo y Vida Personal</h5>
+                        <p class="card-text">Descubre cómo equilibrar tu vida personal y profesional para evitar el agotamiento.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Consejo 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/salud.jpg" class="card-img-top" alt="Consejo 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimentación y Ejercicio</h5>
+                        <p class="card-text">La salud física está ligada a la salud mental. Aprende cómo una buena alimentación y ejercicio pueden mejorar tu bienestar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="container my-5">
+        <h2 class="section-title">Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Enlace a los scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
